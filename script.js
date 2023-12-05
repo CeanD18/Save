@@ -1,17 +1,26 @@
 alert('Chào cậu, chúc một ngày tốt lành')
-var tuoi = prompt('Cấm trẻ dưới 18. Vui lòng nhập tuổi')
-    if (tuoi < 18)
+function nhapTuoi() {
+    var tuoi;
+do {
+    tuoi = prompt('Cấm trẻ dưới 18. Vui lòng nhập tuổi');
+    if (tuoi < 18 && tuoi !== null)
 {
     setTimeout(function() {
-    alert('Đã đủ tuổi đâu :))?')
+    alert('Chưa đủ tuổi đòi vào');
+    nhapTuoi()
 }, 3000)
 }
 
-    else
+    else if (tuoi>=18)
 {
     setTimeout(function() {
-    alert('Đã đủ tuổi đi tù')},3000)
+    alert('Đã đủ tuổi đi tù');
+    nhapTuoi()
+},3000)
+    
 }
+} while (tuoi < 18 && tuoi !== null); }
+nhapTuoi();
 const $list = document.querySelectorAll('li');
 
 function activeLink() {
