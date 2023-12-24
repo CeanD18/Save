@@ -1,0 +1,156 @@
+body {
+    background-image: url('https://live.staticflickr.com/65535/53416062531_99081e5e4e_z.jpg');
+    background-position: center 1vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custom-image {
+    position: relative; /* Sử dụng position để xác định vị trí */
+    top: 190px; /* Di chuyển hình ảnh xuống 50px từ vị trí ban đầu */
+    left: 180px; /* Di chuyển hình ảnh sang trái 20px từ vị trí ban đầu */
+    filter: blur(0.1px);
+    width: 274px; /* Đặt chiều rộng hình ảnh thành 200px */
+    height: auto;
+}
+
+.screen {
+    display: none; /* Ẩn mỗi màn hình */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 20px;
+}
+
+/* Hiển thị màn hình hiện tại */
+.active {
+    display: block; /* Hiển thị màn hình được chọn */
+}
+
+/* CSS cho nút chuyển màn hình */
+.switch-button {
+    padding: 10px 20px;
+    background-color: #b9b2b3;
+    color: rgb(235, 10, 96);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    top: 700px;
+    position: relative;
+}
+.switch-buttonn {
+    padding: 10px 20px;
+    background-color: #b9b2b3;
+    color: rgb(235, 10, 96);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 685px;
+    left: -100px;   
+}
+.switch-buttonnn {
+    padding: 10px 20px;
+    background-color: #b9b2b3;
+    color: rgb(235, 10, 96);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 685px;
+}
+.switch-buttonnnn {
+    padding: 10px 20px;
+    background-color: #b9b2b3;
+    color: rgb(235, 10, 96);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+}
+h1 {
+    color:#041a02;
+    font-style: oblique;
+}
+h2 {
+    color:rgb(235, 10, 96);
+    font-style: oblique;
+    white-space: pre-line;
+}
+p {
+    color: rgb(212, 11, 11);
+    font-size: 10vh;
+    font-style: italic;
+}
+h4 {
+    font-size: 5vh;
+    font-style: italic;
+}
+h5 {
+    font-size: 3vh;
+    color: rgb(189, 37, 88);
+}
+h6 {
+    font-size: 5vh;
+}
+#screen3 {
+    background-color: white;
+    width: 100vw; /* Chiều rộng 100% của viewport */
+    height: 120vh; /* Chiều cao 100% của viewport */
+    background-size: cover; /* Phù hợp với toàn bộ kích thước của #screen3 */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gif {
+    position: fixed; /* Cho phần tử di chuyển theo trình duyệt */
+    bottom: 0; /* Điều chỉnh vị trí dưới cùng */
+    right: 0; /* Điều chỉnh vị trí bên phải */
+    animation: moveGif 5s linear infinite alternate; /* Sử dụng animation để di chuyển */
+}
+
+@keyframes moveGif {
+    from {
+        transform: translateY(0); /* Bắt đầu từ vị trí 0px dọc theo trục y */
+    }
+    to {
+        transform: translateY(-100vh); /* Di chuyển lên trên 100% chiều cao của viewport */
+    }
+}
+.Next1 {
+    border-radius: 8px; /* Điều chỉnh bán kính bo tròn tại các góc */
+    padding: 15px 25px; /* Điều chỉnh lề và kích thước của nút */
+    background-color: #000000; /* Màu nền */
+    color: rgb(255, 255, 255); /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột qua nút */
+    margin-top: 300px; /* Điều chỉnh khoảng cách từ trên xuống */
+    margin-left: 0px; /* Điều chỉnh khoảng cách từ trái sang */
+}
+.Next1:hover {
+    background-color: rgb(212, 57, 125);}
+.rounded-button {
+        border-radius: 8px;
+        padding: 15px 25px;
+        background-color: #ffffff;
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        margin-top: 300px;
+        margin-left: 0px;
+        position: relative;
+        left: 250px; /* Điều chỉnh vị trí sang phải */
+        top: -420px; /* Điều chỉnh vị trí xuống dưới */
+}
+.rounded-button:hover {
+    background-color: rgb(212, 57, 125); /* Màu nền thay đổi khi di chuột qua */
+}
