@@ -1,0 +1,47 @@
+.screen {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+body {
+    background-color: pink;
+}
+h1 {
+    color: aquamarine;
+    font-style: italic;
+    font-size: 10vh;
+    text-align: center;
+}
+.rounded-button {
+    border-radius: 8px; /* Điều chỉnh bán kính bo tròn tại các góc */
+    padding: 15px 25px; /* Điều chỉnh lề và kích thước của nút */
+    background-color: #000000; /* Màu nền */
+    color: rgb(255, 255, 255); /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột qua nút */
+    margin-top: 100px; /* Điều chỉnh khoảng cách từ trên xuống */
+    margin-left: 500px; /* Điều chỉnh khoảng cách từ trái sang */
+}
+.switch-tab {
+    border-radius: 8px; /* Điều chỉnh bán kính bo tròn tại các góc */
+    padding: 15px 25px; /* Điều chỉnh lề và kích thước của nút */
+    background-color: pink; /* Màu nền */
+    color: pink; /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột qua nút */
+    margin-top: 27px; /* Điều chỉnh khoảng cách từ trên xuống */
+    margin-left: 10px; /* Điều chỉnh khoảng cách từ trái sang */
+}
+.switch-tab:hover {
+    background-color: aquamarine;
+}
+#tab1 .switch-tab {
+    display: block; /* Hiển thị nút ở tab1 */
+}
+
+#tab3 .switch-tab {
+    display: none; /* Ẩn nút ở các tab khác */
+}

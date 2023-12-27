@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>27/12</title>
+    <title>Tồi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>27/12 Nếu cậu để tâm</h1>
+    <div id="tab1" class="screen active">
+        <h1>Ocean</h1> 
+        <a href="https://www.facebook.com/Dwowg.Hofag1802">
+            <button class="rounded-button" onclick="showScreen('tab2')">Tại đây hoặc</button>
+        </a>
+        <button class="switch-tab" onclick="showScreen('tab3')">Đây</button> <!-- Đã di chuyển nút Đây vào đây -->
+    </div>
+    <div id="tab3" class="screen inactive">
+        <h3>Tôi xin lỗi vì sự ích kỉ chỉ muốn thoả mãn bản thân. Nhưng tôi muốn nói ra để không còn vướng bận nữa.
+            Không biết có phải là tôi có làm gì khiến bạn thấy không thích không mà tôi thấy bạn tạo ra một bức tường khoảng cách với tôi. Kể từ 'khi ấy' tôi không có cơ hội nói chuyện nào với bạn, mất đi cái "thói quen mỗi tối " tôi cảm thấy khá hụt hẫng.<br><br>
+            Bạn có nghĩ tôi thích bạn không?
+            Có! Nhưng tôi chả biết thích bạn từ khi nào. Khi thấy bạn trên Facebook? Điều đó chỉ làm tôi càng thêm thích bạn thôi. Có lẽ trước đó tôi chỉ là thích nói chuyện với bạn, nói những chuyện trên trời dưới biển đó nhưng cũng khiến tôi vui. Sau một thời gian dài, tôi lại được nói chuyện với bạn, nhưng tôi thấy bạn không còn là Elsa nữa. Bạn tệ đến nỗi có lúc tôi còn thấy ghét bạn trên cương vị là một người bạn. Nhưng sau mấy hồi, tôi lại chẳng thể coi bạn là "người xấu" được. Vì vốn dĩ nó cũng chả liên quan đến bạn mà. Dù vậy, dần dà tôi càng bị ảnh hưởng, không thể ngừng suy nghĩ khi thấy bạn online được. Đây chỉ là lời tôi muốn nói ra thôi, bạn không cần để ý nhiều quá.
+            
+            <br><br>Tôi là một người khá dễ rung động nhưng chẳng yếu đuối. Tôi không thể để mình bị ảnh hưởng, bị bỏ lại phía sau. Tạm thời tôi sẽ cố coi bạn là người bạn bình thường, có lẽ tôi sẽ còn quay lại tiếp tục...hoặc cũng có thể là không. Đó không còn là một điều chắc chắn. Điều cuối cùng tôi có thể trả thù cho sự tồi tệ của cậu là cái dưới đây, vì nghe nói nó có thể làm một con người thấy buồn một cách dễ dàng :))</h3>
+        <button class="switch-tabb" onclick="showScreen('tab1')">Back</button>
+        <a href="https://www.youtube.com/watch?v=oZIC9M87sLo" target="_blank">
+            <button>Click here</button>
+        </a>
+        <a href="https://ceand18.github.io/TM_Web/?fbclid=IwAR1DeCeZ_NSPA3o4D5cBFPlM1wQiRZ5qcpxz5cXJECBaAyG5h_iOPBBuuGI" target="_blank">
+            <button>Đây trước</button>
+        </a>
+        
+    </div>
+    
+    <script>
+        function showScreen(screenId) {
+            const screens = document.querySelectorAll('.screen');
+            screens.forEach(screen => {
+                if (screen.id === screenId) {
+                    screen.classList.add('active');
+                    screen.classList.remove('inactive');
+                } else {
+                    screen.classList.remove('active');
+                    screen.classList.add('inactive');
+                }
+            });
+        }
+    </script>
 </body>
 </html>

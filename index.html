@@ -47,7 +47,7 @@
         </script>
         <a href="https://ceand18.github.io/crush/">
             <button class="rounded-button">Chuyển hướng</button>
-          </a>
+        </a>
           
     </div>
 
@@ -62,6 +62,16 @@
             // Hiển thị màn hình được chọn
             const selectedScreen = document.getElementById(screenId);
             selectedScreen.classList.add('active');
+        function showScreen(screenId) {
+            var screens = document.querySelectorAll('.screen');
+            screens.forEach(function(screen) {
+            if (screen.id === screenId) {
+                screen.classList.add('active');
+            } else {
+                screen.classList.remove('active');
+            }
+            });
+            }
         }
     </script>
 </body>
