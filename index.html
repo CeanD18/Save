@@ -3,76 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merry Christmas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Muộn rồi</title>
+
 </head>
 <body>
-    <!-- Màn hình 1 -->
-    <div id="screen1" class="screen active">
-        <h1>Hello Elsa</h1>
-        <p>Giáng sinh vui vẻ</p>        
-        <button class="switch-button" onclick="showScreen('screen2')">Bấm đây để xem tiếp lời bộc bạch của tớ nhé!</button>
-        <img class="gif" alt="gif" src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gifyou.webp"> 
-    </div>
-    <!-- Màn hình 2 -->
-    <div id="screen2" class="screen">
-        <h2>Do là tớ mới học nên nó xấu vãi cậu ạ,mong cậu chấp nhận :)) </h2>
-        <h3> Lời đầu tiên xin gửi lời chúc sức khỏe và lời chào trân trọng nhất!<br>
-        Hòa cùng không khí vui mừng ngày thi và ngày Tết sắp tới<br>
-        Tớ muốn gửi lời đến cô gái đang đọc<br>
-        Chúc cậu có một Giáng Sinh Vui Vẻ bên người thân của mình<br>
-        Chúc cậu sớm tìm ra người thương của mình trong mái trường ulis :))<br><br><br>
-                        Giáng Sinh Dáng Xinh!<br>
-       -From Hoàng Tùng Dương  </h3>
-        
-        <button class="switch-buttonn" onclick="showScreen('screen1')">Back</button>
-        <button class="switch-buttonnn" onclick="showScreen('screen3')">Next</button>
-    </div>
-    <!--Màn hình 3-->
-    <div id="screen3" class="screen activee">
-        <h4>Gửi lời xin lỗi đến Elsa ( Not Sa )</h4>
-        <h5>Tôi vẫn không thể tin được ngày ấy<br>
-        Ngày 27/10, Cậu vẫn là một người đặc biệt với tôi <br>
-         nhưng tôi lại quên thực hiện lời hứa,<br>
-          một lời chúc trọn vẹn cho người duy nhất chúc sinh nhật tôi ngày ấy.<br>
-        Mong rằng tôi còn có thể thực hiện lời hứa đó vào lần tới</h5>
-        <h6>À còn một nút ấn ẩn nửa nha, hãy tìm nó:></h6>
-        <button class="switch-buttonnnn" onclick="showScreen('screen2')">Back</button>
-        <button class="Next1">Cái này Unlock vào 27/12</button>
-        <script>
-            const button = document.querySelector('.Next1');
-            button.addEventListener('click', function() {
-                window.location.href = 'indexx.html';
-            });
-        </script>
-        <a href="https://ceand18.github.io/crush/">
-            <button class="rounded-button">Chuyển hướng</button>
-        </a>
-          
-    </div>
-
-    <script>
-        function showScreen(screenId) {
-            // Ẩn tất cả các màn hình
-            const screens = document.querySelectorAll('.screen');
-            screens.forEach(screen => {
-                screen.classList.remove('active');
-            });
-
-            // Hiển thị màn hình được chọn
-            const selectedScreen = document.getElementById(screenId);
-            selectedScreen.classList.add('active');
-        function showScreen(screenId) {
-            var screens = document.querySelectorAll('.screen');
-            screens.forEach(function(screen) {
-            if (screen.id === screenId) {
-                screen.classList.add('active');
-            } else {
-                screen.classList.remove('active');
-            }
-            });
-            }
-        }
-    </script>
+    <h1>Rất tiếc, bạn không thể đọc lại nó nữa rồi. Bảo quay lại 27/12 cơ mà!</h1>
 </body>
 </html>
